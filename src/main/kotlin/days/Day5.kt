@@ -17,13 +17,7 @@ object Day5 : Day {
     }
 
     private fun part1(lines: List<String>) {
-        var largest = 0
-
-        getIds(lines).forEach { seatId ->
-            if (seatId > largest) largest = seatId
-        }
-
-        println("Largest id: $largest")
+        println("Largest id: ${getIds(lines).max()}")
     }
 
     private fun getIds(lines: List<String>) : List<Int> {

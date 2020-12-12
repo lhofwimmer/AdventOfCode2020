@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.jgrapht:jgrapht-core:1.5.0")
 }
 
 tasks.withType<KotlinCompile>() {
